@@ -1,6 +1,6 @@
 (function(){
 	
-	var servletUrl = "http://localhost:8080/trk";
+	var servletUrl = "https://trk.gapidu.com";
 	var delayTime = 3000;
 	
 	var identifiers =  {
