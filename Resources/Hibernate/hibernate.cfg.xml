@@ -17,7 +17,7 @@
 		
 		<property name="show_sql">true</property>
 		
-		<!-- Mapping files -->
+		<!-- Mapping files --><!-- 
 		<mapping resource="hibernate/mapping/company_link.hbn.xml" />
 		<mapping class="com.gapidu.CRUDS.CompanyLink"/>
 		<mapping resource="hibernate/mapping/lead_identifier_types.hbn.xml" />
@@ -33,6 +33,6 @@
 		<mapping resource="hibernate/mapping/tools.hbn.xml" />
 		<mapping class="com.gapidu.CRUDS.Tools"/>
 		<mapping resource="hibernate/mapping/visitors.hbn.xml" />
-		<mapping class="com.gapidu.CRUDS.Visitors" />
+		<mapping class="com.gapidu.CRUDS.Visitors" /> -->
 	</session-factory>
 </hibernate-configuration>

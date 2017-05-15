@@ -41,7 +41,7 @@ public class GpduServlet extends HttpServlet {
 			logger.info("parsing visitor's identifiers from session");
 			VisitorContext visitor = new VisitorContext(request, response);
 
-			// new GpduHandler(visitor);
+			 new GpduHandler(visitor);
 
 			response.getWriter().append("").append(request.getContextPath());
 
