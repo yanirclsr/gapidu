@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class table="visitors" lazy="false" name="com.gapidu.CRUDS.Visitors">
+		<id name="id" column="id" type="int" >
+			<generator class="increment" />
+		</id>
+		<property name="accountId" type="int" column="account_id"/>   
+		<property name="vid" type="string" column="vid"/>   
+		<property name="idsCount" type="int" column="ids_count"/>   
+		<property name="landingPage" type="string" column="landing_page"/>
+		<property name="referral" type="string" column="referral"/>
+		<property name="userAgentId" type="string" column="user_agent_id"/>
+		<property name="ip" type="string" column="ip"/>
+		<property name="dayBucket" type="string" column="day_bucket"/>
+		<property name="engaged" type="boolean" column="engaged"/>
+		<property name="created" type="timestamp" column="created"/>
+		 
+	</class>
+</hibernate-mapping>

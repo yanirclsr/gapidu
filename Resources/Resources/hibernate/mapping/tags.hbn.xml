@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class table="tags" lazy="false" name="com.gapidu.CRUDS.Tags">
+		<id name="id" column="id" type="int" >
+			<generator class="increment" />
+		</id>
+		<property name="accountId" type="int" column="account_id"/> 
+		<property name="name" type="string" column="name"/> 
+		<property name="created" type="string" column="created"/> 
+		 
+	</class>
+</hibernate-mapping>

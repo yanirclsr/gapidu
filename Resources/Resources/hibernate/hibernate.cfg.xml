@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+   <session-factory>
+
+		<!-- User / PWD -->
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		
+		<!-- DB Settings -->
+<!-- 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property> -->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="connection.url">jdbc:mysql://localhost/gapiduOs</property>
+		
+		<property name="show_sql">true</property>
+		
+		<!-- Mapping files -->
+		<mapping resource="hibernate/mapping/company_link.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.CompanyLink"/>
+		<mapping resource="hibernate/mapping/lead_identifier_types.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.LeadIdentifierTypes"/>
+		<mapping resource="hibernate/mapping/lead_ids_raw.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.LeadIds"/>
+		<mapping resource="hibernate/mapping/lead_ids.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.LeadIdsRaw"/>
+		<mapping resource="hibernate/mapping/lead_link.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.LeadLink"/>
+		<mapping resource="hibernate/mapping/sync_stats.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.SyncStats"/>
+		<mapping resource="hibernate/mapping/tools.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.Tools"/>
+		<mapping resource="hibernate/mapping/visitors.hbn.xml" />
+		<mapping class="com.gapidu.CRUDS.Visitors" />
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class table="lead_ids_raw" lazy="false" name="com.gapidu.CRUDS.LeadIds">
+		<id name="id" column="id" type="int" >
+			<generator class="increment" />
+		</id>
+		<property name="accountId" type="int" column="account_id"/> 
+		<property name="linkId" type="int" column="link_id"/> 
+		<property name="identifier" type="string" column="identifier"/> 
+		<property name="identifierType" type="int" column="identifier_type"/> 
+		<property name="dayBucket" type="int" column="day_bucket"/> 
+		<property name="updated" type="string" column="updated"/> 
+		<property name="linked" type="boolean" column="linked"/> 
+		 
+	</class>
+</hibernate-mapping>
+	

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class table="lead_identifier_types" lazy="false" name="com.gapidu.CRUDS.LeadIdentifierTypes">
+		<id name="id" column="id" type="int" >
+			<generator class="increment" />
+		</id>
+		<property name="name" type="string" column="name"/> 
+		<property name="power" type="boolean" column="power"/> 
+		<property name="global" type="boolean" column="global"/>  
+		
+	</class>
+</hibernate-mapping>
+	

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class table="lead_link" lazy="false" name="com.gapidu.CRUDS.LeadLink">
+		<id name="id" column="id" type="int" >
+			<generator class="increment" />
+		</id>
+		<property name="accountId" type="int" column="account_id"/> 
+		<property name="status" type="int" column="status"/> 
+		<property name="updated" type="string" column="updated"/> 
+		 
+	</class>
+</hibernate-mapping>
+	

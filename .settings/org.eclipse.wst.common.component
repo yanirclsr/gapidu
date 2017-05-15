@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="gapiduOs">
+    <wb-module deploy-name="GapiduOs">
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <property name="context-root" value="gapiduOs"/>
-        <property name="java-output-path" value="/gapiduOs/target/classes"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Resources"/>
+        <property name="java-output-path" value="/GapiduOs/target/classes"/>
+        <property name="context-root" value="GapiduOs"/>
     </wb-module>
 </project-modules>
